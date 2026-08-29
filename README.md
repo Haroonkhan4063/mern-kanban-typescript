@@ -1,4 +1,4 @@
-🚀 TaskFlow - TypeScript Migration (MERN)
+# 🚀 TaskFlow - TypeScript Migration (MERN)
 
 This repository contains the TypeScript migration of the **TaskFlow Kanban Board**, originally built with JavaScript. This migration was completed as part of the **Dev Weekends Fellowship** task.
 

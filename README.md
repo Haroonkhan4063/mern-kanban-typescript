@@ -1,30 +1,42 @@
-# TaskFlow - Full-Stack Kanban Board 🚀
+ TaskFlow - TypeScript Migration (MERN)
 
-TaskFlow is a modern, responsive, and fully functional Kanban Board application designed to help users manage their tasks efficiently. Built with a React frontend and an Express.js backend, this project demonstrates real-world full-stack development, API integration, and advanced state management using drag-and-drop functionality.
+This repository contains the TypeScript migration of the **TaskFlow Kanban Board**, originally built with JavaScript. This migration was completed as part of the **Dev Weekends Fellowship** task.
 
-## ✨ Features
-* **Drag and Drop Interface:** Seamlessly move tasks between "To Do", "In Progress", and "Done" columns.
-* **RESTful API Backend:** Fully functional custom Node.js/Express backend handling CRUD operations.
-* **Modern UI/UX:** Clean, SaaS-like interface built with custom CSS and Inter typography.
-* **Real-time State Updates:** Instant UI updates synced reliably with the backend database.
+## 🎯 Dev Weekends Task Requirements Met
+*   **✅ Express Routes Typed:** All backend routes (Req, Res, Next) are strictly typed using TypeScript.
+*   **✅ Generics Implemented:** Created and utilized a Generic Interface (`ApiResponse<T>`) for standardized API responses.
+*   **✅ No Implicit Any:** Strict mode is enabled (`"strict": true`, `"noImplicitAny": true`) across both the frontend and backend.
+*   **✅ Core TS Features Used:** Extensively used Interfaces, Enums, and Type Narrowing for robust data validation.
 
 ## 🛠️ Tech Stack
-* **Frontend:** React (Vite), JavaScript, custom CSS, `@dnd-kit/core` (for drag-and-drop logic).
-* **Backend:** Node.js, Express.js, CORS.
+*   **Frontend:** React (Vite), TypeScript, `@dnd-kit/core` (for drag-and-drop)
+*   **Backend:** Node.js, Express, TypeScript (`tsx` for execution)
+*   **Data Handling:** Strongly typed arrays and interfaces.
 
-## 🚀 How to Run Locally
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
 
 ### 1. Backend Setup
-1. Open a terminal and navigate to the `kanban-backend` directory.
-2. Install dependencies: `npm install`
-3. Start the server: `npx nodemon server.js`
-4. The server will run on `http://localhost:5000`.
+Navigate to the backend directory, install dependencies, and start the server:
+```bash
+cd kanban-backend
+npm install
+npm run dev
+The backend will run on http://localhost:5000
 
-### 2. Frontend Setup
-1. Open a separate terminal and navigate to the `react-kanban-board` directory.
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Open the provided localhost link in your browser.
+2. Frontend Setup
+Open a new terminal, navigate to the frontend directory, install dependencies, and start the Vite server:
 
-## 👨‍💻 Developer
-Developed by **Muhammad Haroon Khan** as part of a 30-Day Full-Stack Development Roadmap.
+Bash
+cd react-kanban-board
+npm install
+npm run dev
+✨ Features
+Drag and Drop: Move tasks seamlessly across "To Do", "In Progress", and "Done" columns.
+
+Full CRUD: Add, view, update (drag/drop status), and delete tasks.
+
+Type Safety: End-to-end type safety preventing runtime errors.
+
+Developed by Muhammad Haroon Khan for Dev Weekends.
